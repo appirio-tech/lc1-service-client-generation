@@ -5,7 +5,7 @@ This repo is an example of how to generate client libraries for loudercrowd.
 ## How to use this repo
 
 1. Add swagger-js-codegen to your package.json
-1. `grunt-swagger-js-codegen`
+1. `grunt-swagger-js-codegen` verizon > 0.2.9
 1. Configure the grunt script
 1. Add the grunt task
 
@@ -31,3 +31,5 @@ The file will be based upon the json form http://lc1-discussion-service.herokuap
 
 See included Gruntfile.js for a complete example.
 See lib/Discussion.js for an example implementation.
+
+*At the time of this writting the current version of grunt-swagger-js-codegen does not work.  You can download the latest and add it to your node_modules folder:  https://github.com/wcandillon/grunt-swagger-js-codegen*
