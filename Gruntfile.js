@@ -13,7 +13,8 @@ module.exports = function(grunt) {
         apis: [
           {
             swagger: swaggerFile,
-            moduleName: 'Discussion'
+            moduleName: 'Discussion',
+            className: 'Discussion'
           }
         ],
         dest: 'lib'

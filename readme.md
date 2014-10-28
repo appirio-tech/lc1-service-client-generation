@@ -20,7 +20,8 @@ module.exports = function(grunt) {
       options: {
         apis: [{
           swagger: 'http://lc1-challenge-service.herokuapp.com/api-docs', // The location of the swagger file
-          moduleName: 'Challenge' // The name of the file and class
+          moduleName: 'Challenge', // The name of the file anme
+          className: 'Challenge' // The class name
         }],
         dest: 'lib' // Where the file should be generated.
       },
