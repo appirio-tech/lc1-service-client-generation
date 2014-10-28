@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       options: {
         apis: [{
           swagger: 'http://lc1-challenge-service.herokuapp.com/api-docs', // The location of the swagger file
-          moduleName: 'Challenge', // The name of the file anme
+          moduleName: 'Challenge', // The name of the file name
           className: 'Challenge' // The class name
         }],
         dest: 'lib' // Where the file should be generated.
@@ -41,9 +41,9 @@ module.exports = function(grunt) {
 ```
 
 This example will generate a file called `Discussion.js` in the `lib` folder of your project root.
-The file will be based upon the json form http://lc1-discussion-service.herokuapp.com/api-docs.
+The file will be based upon the json from http://lc1-discussion-service.herokuapp.com/api-docs.
 
 See included Gruntfile.js for a complete example.
 See lib/Discussion.js for an example implementation.
 
-*At the time of this writting the current version of grunt-swagger-js-codegen does not work.  You can download the latest and add it to your node_modules folder:  https://github.com/wcandillon/grunt-swagger-js-codegen*
+*At the time of this writing the current version of grunt-swagger-js-codegen does not work.  You can download the latest and add it to your node_modules folder:  https://github.com/wcandillon/grunt-swagger-js-codegen*
