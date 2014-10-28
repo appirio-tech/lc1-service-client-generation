@@ -4,7 +4,7 @@ This repo is an example of how to generate client libraries for loudercrowd.
 
 ## How to use this repo
 
-1. Add `grunt`, `load-grunt-tasks`, `grunt-swagger-js-codegen": "^0.2.10"` to your package.json
+1. Add `grunt`, `load-grunt-tasks`, `grunt-swagger-js-codegen": "^0.2.11"` to your package.json
 1. Configure the grunt script
 1. Add the grunt task (see below)
 2. run `grunt swagger-js-code-gen` or simply `grunt` if you are following the script below
