@@ -80,4 +80,3 @@ The file will be based upon the json from http://lc1-discussion-service.herokuap
 See included Gruntfile.js for a complete example.
 See lib/Discussion.js for an example implementation.
 
-*At the time of this writing the current version of grunt-swagger-js-codegen does not work.  You can download the latest and add it to your node_modules folder:  https://github.com/wcandillon/grunt-swagger-js-codegen*
