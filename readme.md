@@ -11,7 +11,6 @@ This repo is an example of how to generate client libraries for loudercrowd.
 
 ```javascript
 'use strict';
-'use strict';
 
 
 module.exports = function(grunt) {
