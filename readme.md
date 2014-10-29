@@ -7,28 +7,50 @@ This repo is an example of how to generate client libraries for loudercrowd.
 1. Add `grunt`, `load-grunt-tasks`, `grunt-swagger-js-codegen": "^0.2.11"` to your package.json
 1. Configure the grunt script
 1. Add the grunt task (see below)
-2. run `grunt swagger-js-code-gen` or simply `grunt` if you are following the script below
+2. run `grunt swagger-clients`
 
 ```javascript
 'use strict';
+'use strict';
+
 
 module.exports = function(grunt) {
 
   grunt.initConfig({
 
+
     'swagger-js-codegen': {
       options: {
-        apis: [{
+        apis: [
+        {
           swagger: 'http://lc1-challenge-service.herokuapp.com/api-docs', // The location of the swagger file
-          moduleName: 'Challenge', // The name of the file name
-          className: 'Challenge' // The class name
+          moduleName: 'challenge-consumer', // The name of the file and class
+          className: 'Challenge',
+        },
+        {
+          swagger: 'http://lc1-challenge-service.herokuapp.com/api-docs', // The location of the swagger file
+          moduleName: 'challenge-service', // The name of the file and class
+          className: 'Challenge',
+          angularjs: true
+        },
+        {
+          swagger: 'http://lc1-discussion-service.herokuapp.com/api-docs', // The location of the swagger file
+          moduleName: 'discussion-consumer', // The name of the file and class
+          className: 'Discussion',
+        },
+        {
+          swagger: 'http://lc1-discussion-service.herokuapp.com/api-docs', // The location of the swagger file
+          moduleName: 'discussion-service', // The name of the file and class
+          className: 'Discussion',
+          angularjs: true
         }],
-        dest: 'lib' // Where the file should be generated.
+        dest: 'swagger-clients' // Where the file should be generated.
       },
       dist: {
 
       }
     }
+
 
   });
 
@@ -36,7 +58,20 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
 
-  grunt.registerTask('default', ['swagger-js-codegen']);
+  //grunt.registerTask('default', ['swagger-js-codegen']);
+
+  grunt.registerTask('default', function() {
+
+  });
+
+
+
+  // generate swagger clients
+  grunt.registerTask('swagger-clients', 'generate challenge angular service', function () {
+    grunt.task.run('swagger-js-codegen');
+  });
+
+
 };
 ```
 
