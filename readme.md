@@ -23,23 +23,23 @@ module.exports = function(grunt) {
         apis: [
         {
           swagger: 'http://lc1-challenge-service.herokuapp.com/api-docs', // The location of the swagger file
-          moduleName: 'challenge-consumer', // The name of the file and class
-          className: 'Challenge',
+          moduleName: 'challenge-consumer', // The name of the file
+          className: 'Challenge', // The name of the javascript class
         },
         {
           swagger: 'http://lc1-challenge-service.herokuapp.com/api-docs', // The location of the swagger file
-          moduleName: 'challenge-service', // The name of the file and class
+          moduleName: 'challenge-service', // The name of the file
           className: 'Challenge',
           angularjs: true
         },
         {
           swagger: 'http://lc1-discussion-service.herokuapp.com/api-docs', // The location of the swagger file
-          moduleName: 'discussion-consumer', // The name of the file and class
+          moduleName: 'discussion-consumer', // The name of the file
           className: 'Discussion',
         },
         {
           swagger: 'http://lc1-discussion-service.herokuapp.com/api-docs', // The location of the swagger file
-          moduleName: 'discussion-service', // The name of the file and class
+          moduleName: 'discussion-service', // The name of the file
           className: 'Discussion',
           angularjs: true
         }],
