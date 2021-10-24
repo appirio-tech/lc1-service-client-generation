@@ -4,7 +4,7 @@
   "author": "nhastings@appirio.com",
   "repository": "https://github.com/appirio-tech/lc1-service-client-generation.git",
   "dependencies": {
-    "grunt-swagger-js-codegen": "0.2.11",
+    "grunt-swagger-js-codegen": "0.4.6",
     "load-grunt-tasks": ">=0.4.0",
     "grunt-cli": ">=0.1.13",
     "time-grunt": ">=0.3.1",
